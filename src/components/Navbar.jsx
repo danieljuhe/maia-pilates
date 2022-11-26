@@ -31,7 +31,7 @@ function Navbar() {
           </ul>
         </div>
         <div>
-          <Button text="MiNabo" bg="bg-gradient-to-r from-purple-500 to-blue-500"/>
+          <Button text="minabo" bg="bg-gradient-to-r from-purple-500 to-blue-500"/>
         </div>
       </nav>
     </div>
