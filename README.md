@@ -1,17 +1,30 @@
+# WebApp React JS, Tailwind & Vite
+
+
 <p align="center">
-  <h1>Vite + React + TailwindCss + JIT</h1>
+<img src="https://blog.logrocket.com/wp-content/uploads/2022/06/setting-up-dev-environment-react-vite-tailwind.png" />
 </p>
 
-<p>
-<img src="https://img.shields.io/github/stars/vivekascoder/vite-react-tailwind-jit?style=for-the-badge">
-<img src="https://img.shields.io/github/forks/vivekascoder/vite-react-tailwind-jit?style=for-the-badge">
-</p>
 
-This template allows you to quickly scaffold a React project with React Router, TailwindCss with JIT Compiler and vite as a bundler. We use Vite because it's much faster than webpack. We use tailwindcss JIT compiler because it makes tailwindcss build time negligible and offers more features that you can check here [Tailwind JIT](https://tailwindcss.com/docs/just-in-time-mode). Talking about Vite, you can find more information here [Vite](https://vitejs.dev/).
+### Requirements:
 
-## How to Install.
-First of all make sure you have yarn installed. If you have it you can create a new repo with this template and can clone it.
+1. Install the packages:
+```
+$ npm install
+```
+2. Create a .env file:
+```
+$ npm run dev
+```
 
-![Use this template](https://i.imgur.com/Gtt5CPx.png)
+### Styles
+You can update the `styles/index.css` or create new `.css` files inside `styles/` and import them into your current scss or js files depending on your needs.
 
-After clonning it, you can simply go to the folder and type `yarn` to install the dependencies.
+### Components
+Add more files into your `./src/components` or styles folder as you need them and import them into your current files as needed.
+
+**Note (New changes)**: Components have been converted into functions to support the use of hooks:
+* Instead of a class component, we're using a `const` function.
+* Class `constructor` and `state` have been replaced by `useState()` hooks.
+* `componentDidMount()` was replaced by `useEffect({}, [])` - It runs at mount thanks to the second parameter (`[]`).
+* `Actions` and `Store` still work the same way.
