@@ -23,6 +23,33 @@ You can update the `styles/index.css` or create new `.css` files inside `styles/
 ### Components
 Add more files into your `./src/components` or styles folder as you need them and import them into your current files as needed.
 
+### Pages
+Add all the pages like Home, About, Contact or whatever you need. These should be routed in src/App.jsx, don't touch src/main.jsx. Pages shuld contener at list:
+
+alomoves.com buen ejemplo a seguir
+
+```
+HOME =>
+  Inicio                  
+CLASSES =>
+   * Que es el pilates  
+   * A quien va orientado 
+   * Metodologia  
+   * Videos del canal   
+   * Enlace Instagram
+INSTRUCTORS=> 
+  * Card con cada instructor 
+  * Trayectoria profesional  
+  * Foto
+CENTER=> 
+  * Fotos del centro, cuando pinchas se abre un Carousel
+CONTACT=> 
+  * Horario  
+  * Ubicacion con google maps  
+  * Contacto via mail
+```             
+               
+
 **Note (New changes)**: Components have been converted into functions to support the use of hooks:
 * Instead of a class component, we're using a `const` function.
 * Class `constructor` and `state` have been replaced by `useState()` hooks.
